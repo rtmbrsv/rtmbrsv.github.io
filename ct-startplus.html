@@ -8,5 +8,69 @@
 <body>
 <p><b>Calltouch Старт+ Тест</b></p>
 <p><span>Подменный номер:</span><span class="phone">+7 (495) 308-01-00</span></p>
+  <div>
+	<form id="myform" name="test" method="post">
+
+		<p>Форма "Заявка на звонок"<br>
+
+		<p>Ваше имя:<br>
+		<input type="text" name="user" size="40">
+		</p>
+	
+		<p>Ваш номер телефона в формате 7XXXXXXXXXX:<br>
+		<input type="text" name="phonenumber" size="40">
+		</p>
+
+		<p>Ваша почта:<br>
+		<input type="text" name="email" size="40">
+		</p>
+
+		<p>Коммент:<br>
+		<input type="text" name="comment" size="40">
+		</p>
+
+	
+	<p><input type="submit" value="Отправить"></p>
+	</form>
+</div>
+  <script type="text/javascript">
+/* Вешаем обработчик по событию submit формы с идентификатором myform */
+jQuery(document).on('submit', 'form#myform', function() { 
+/* Записываем в переменную form объект с формой, на которой сработало событие submit */
+var form = jQuery(this);
+/* Ищем на форме input для ввода номера телефона и получаем его значение, в примере поиск производится по наличию у input атрибута name со значением phone */
+var phone = form.find('input[name="phonenumber"]').val();
+/* Аналогично собираем другие введенные в поля формы данные, например, ФИО и email */
+var fio = form.find('input[name="user"]').val();
+var mail = form.find('input[name="email"]').val(); 
+var comment = form.find('input[name="comment"]').val(); 
+/* Указываем название формы */
+var sub = 'Заявка на звонок';
+/* Указываем ID сайта внутри Calltouch и адрес API-сервера */
+var ct_node_id = '10';
+var ct_site_id = '30765';
+/* Формируем массив входных параметров запроса */
+var ct_data = {         
+fio: fio,
+phoneNumber: phone,
+email: mail,
+subject: sub,
+comment: comment,
+sessionId: window.call_value
+};
+/* При необходимости делаем проверку на корректность собранных с формы данных */
+/* Например, обязательным для заполнения на форме является поле с телефоном, проверяем его наличие и не пустое ли оно */
+if (typeof(phone)!='undefined' && phone!=''){
+/* Выполняем AJAX-запрос */
+jQuery.ajax({  
+  url: 'https://api-node'+ct_node_id+'.calltouch.ru/calls-service/RestAPI/requests/'+ct_site_id+'/register/',      
+  dataType: 'json',         
+  type: 'POST',          
+  data: ct_data,
+  async: false /* Предположим, после отправки формы на сайте настроен редирект на другую страницу, поэтому используем параметр async: false для синхронной отправки запроса */
+});  
+}
+});
+</script>
 </body>
 </html>
