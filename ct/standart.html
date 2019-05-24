@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Calltouch Standart Testpage</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://mod.calltouch.ru/init.js?id=46e5lopn"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>Calltouch Standart testpage</h1>
+				<p>The most beautiful way to test some functions.</p>
+				<p>Number Insertion Test: <span class="phone">+7 (495) 308-01-00</span></p>
+			</header>
+
+		<!-- Signup Form -->
+			<form id="myform" method="get" action="#" name="test">
+				<input type="text" name="user" placeholder="Name">
+				<input type="text" name="phonenumber" placeholder="Phone Number">
+				<input type="text" name="email" id="email" placeholder="Email Address" />
+				<input type="submit" value="Submit" />
+			</form>
+
+		<!-- Footer
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer> -->
+
+		<!-- Scripts -->
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+/* Вешаем обработчик по событию submit формы с идентификатором myform */
+jQuery(document).on('submit', 'form#myform', function() {
+/* Записываем в переменную form объект с формой, на которой сработало событие submit */
+var form = jQuery(this);
+/* Ищем на форме input для ввода номера телефона и получаем его значение, в примере поиск производится по наличию у input атрибута name со значением phone */
+var phone = form.find('input[name="phonenumber"]').val();
+/* Аналогично собираем другие введенные в поля формы данные, например, ФИО и email */
+var fio = form.find('input[name="user"]').val();
+var mail = form.find('input[name="email"]').val();
+var comment = form.find('input[name="comment"]').val();
+/* Указываем название формы */
+var sub = 'Заявка на звонок';
+/* Указываем ID сайта внутри Calltouch и адрес API-сервера */
+var ct_node_id = '10';
+var ct_site_id = '30765';
+/* Формируем массив входных параметров запроса */
+var ct_data = {
+fio: fio,
+phoneNumber: phone,
+email: mail,
+subject: sub,
+comment: comment,
+sessionId: window.call_value
+};
+/* При необходимости делаем проверку на корректность собранных с формы данных */
+/* Например, обязательным для заполнения на форме является поле с телефоном, проверяем его наличие и не пустое ли оно */
+if (typeof(phone)!='undefined' && phone!=''){
+/* Выполняем AJAX-запрос */
+jQuery.ajax({
+  url: 'https://api-node'+ct_node_id+'.calltouch.ru/calls-service/RestAPI/requests/'+ct_site_id+'/register/',
+  dataType: 'json',
+  type: 'POST',
+  data: ct_data,
+  async: false /* Предположим, после отправки формы на сайте настроен редирект на другую страницу, поэтому используем параметр async: false для синхронной отправки запроса */
+});
+}
+});
+</script>
+	</body>
+</html>
