@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Index page</title>
+	<link rel="stylesheet" href="css/app.css">
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+
+</head>
+
+<body>
+	<div class="page-wrapper">
+
+
+
+		<div class="banner">
+
+
+			<picture>
+
+				<source media="(min-width: 993px)" srcset="images/title.webp 1x, images/title@2x.webp 1.3x" type="image/webp">
+				<source media="(min-width: 993px)" srcset="images/title.png 1x, images/title@2x.png 1.3x" type="image/png">
+
+
+				<img src="images/title-mobile.png" width="1280" height="391" alt="image">
+
+			</picture>
+
+		</div>
+
+		<div class="top">
+			<div class="wrapper">
+				<div class="top__desc desc">
+					<div class="desc__text desc__text--mobile">
+						<p>Письма и записи советских людей в первые месяцы Великой Отечественной войны</p>
+					</div>
+				</div>
+
+				<div class="top__block">
+					<div class="top__image" data-animation-start="right-large">
+
+
+						<picture>
+
+							<source srcset="images/img-1.webp 1x, images/img-1@2x.webp 1.3x" type="image/webp">
+							<source srcset="images/img-1.png 1x, images/img-1@2x.png 1.3x" type="image/png">
+
+
+							<img src="images/img-1.png" width="770" height="507" loading="lazy" alt="image">
+
+						</picture>
+
+						<div class="top__desc-pic">Утро 1 августа 1941 года, Одесса. Георгий Зельма / РИА Новости</div>
+					</div>
+				</div>
+				<div class="desc desc--indent-bot">
+					<div class="desc__text desc__text--mobile">
+						<p>В начале лета 1941 года советские люди в массе своей жили привычной жизнью: ходили на работу, планировали каникулы, писали письма родным, устраивали личную жизнь, покупали билеты в театр. Утро 22 июня перечеркнуло большую часть планов: Германия напала на СССР.</p>
+						<p>Страна — это люди; мировая война — это катастрофа для всех людей и для каждого человека в отдельности. Спустя 80 с лишним лет мы можем услышать голоса тех, чья жизнь в один миг необратимо изменилась. Тех, кто даже в таких обстоятельствах находил в себе силы думать о будущем.</p>
+					</div>
+				</div>
+				<div class="block block--cl-dark">
+					<div class="block__inner" data-animation="right-slow"></div>
+					<div class="block__text">
+						<div class="desc">
+							<p>«Я живу по-прежнему неплохо,</p>
+							<p class="desc__text">— сообщал в письме семье 38-летний Михаил Цемехман; в начале июля 1941-го он ушел на фронт добровольцем в составе 3-го полка 9-й Кировской дивизии народного ополчения Москвы. —</p>
+							<p>Часто меняю место ночлега. Квартир я сменил очень много. Все они были комфортабельными; я могу назвать вам несколько адресов таких квартир: в крупном лесу под большой сосной — там много света и свежего воздуха, в мелком кустарнике среди кочек на мягкой пушистой траве, на мшистой поверхности высохшего болота среди редких кустов и, наконец, в стогах сена на зеленых лугах. Везде наша советская земля встречала нас гостеприимно. Несмотря на то что много хожу и работаю, на частую перемену ночлега, на переменчивость погоды, я себя чувствую здоровым. Пропали у меня все московские болезни. Я уже больше не страдаю от насморка, и поясница перестала болеть — чего я больше всего опасался, а что будет дальше — увидим».</p>
+							<p class="desc__text">Михаил Цемехман пропал без вести в боях за Москву в октябре-ноябре 1941 года.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="desc desc--indent">
+					<p class="desc__text" data-animation="fade">День Победы — это всегда напоминание о том, как все началось и какой катастрофой обернулось. Наш специальный проект</p>
+					<p data-animation="fade"><strong>«…а что будет дальше — увидим» —</strong></p>
+					<p class="desc__text" data-animation="fade">это документальная повесть о простых советских людях, которые летом 1941 года не знали, что до мирного будущего — долгие четыре года, но верили в него.</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="articles">
+
+			<section class="article js-scroll-section" id=nina-atamanova>
+				<div class="wrapper">
+					<div class="article__content">
+						<div class="article__top">
+							<h2 class="article__title" data-animation="fade">ДОЖДЬ, ТЕМНОТА, НЕВЕСЕЛО</h2>
+							<h3 class="article__author">Нина Атаманова</h3>
+							<a class="article__time" data-scroll-to="" href=#nina-atamanova>
+
+
+								<picture>
+
+									<source srcset="images/time-1.webp 1x, images/time-1@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/time-1.png 1x, images/time-1@2x.png 1.3x" type="image/png">
+
+
+									<img src="images/time-1.png" width="300" height="62" loading="lazy" alt="image">
+
+								</picture>
+
+							</a>
+						</div>
+						<div class="block block--indent block--indent-bot">
+							<div class="block__inner" data-animation="right"></div>
+							<div class="block__text">
+
+								<div class="article__image article__image--indent">
+									<div class="article__image-inner" data-animation="right-slow">
+
+
+										<picture>
+
+											<source srcset="images/author-1.webp 1x, images/author-1@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/author-1.png 1x, images/author-1@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/author-1.png" width="401" height="502" loading="lazy" alt="image">
+
+										</picture>
+
+										<div class="article__image-desc">
+											<span>Нина Атаманова</span>
+											<span>Проект «Прожито» Европейского университета в Санкт-Петербурге</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="article__text ">
+									<p>«Тамбов. Сегодня 22 июня... Сегодняшний день для всего человечества является роковым. Обстановка, в которой р жил в последнее время, была накалена... и вот война! <br>[...]</p>
+									<p>...сегодня в 4 часа утра Германия «объявила» нам войну, предварительно подвергнув бомбардировке наши прекрасные города — Киев, Севастополь, Каунас, Житомир и др. Весь советский народ встретил эту подлую вылазку врага волной гнева и как один человек поклялись защитить нашу Родину. [...]</p>
+									<p>Как, интересно, теперь думают и что чувствуют мои подруги, друзья, ребята, товарищи? Где они?</p>
+									<div class='article__mark-text'>
+										<p><strong>Что будет с каждым из нас? Найдем ли мы свое место в этом огромном строю? Будем ли живы, встретимся ли?! Наверное, все наши ребята поедут на фронт. А тут еще два экзамена осталось сдать.</strong></p>
+									</div>
+									<p>Не знаю, что получится. Кончаю писать, 2 часа ночи. Тихо играет музыка в приемнике, вальс. Все спят. На улице опять дождь, темнота, невесело».</p>
+								</div>
+
+								<div class="article__mask js-article-mask " data-animation="right-slow-more">
+									<div class="article__mask-inner">
+
+
+										<picture>
+
+											<source media="(min-width: 993px)" srcset="images/mask-1.webp 1x, images/mask-1@2x.webp 1.3x" type="image/webp">
+											<source media="(min-width: 993px)" srcset="images/mask-1.png 1x, images/mask-1@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/mask-1-mobile.png" width="1556" height="1367" loading="lazy" alt="image">
+
+										</picture>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="article__about desc " data-animation="fade">
+						<div class="desc__text">
+							<p><strong>Нина Атаманова </strong>в 1941 году была студенткой исторического факультета МГУ. Позже работала медсестрой в тамбовском госпитале</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="article js-scroll-section" id=lazar-frenkel>
+				<div class="wrapper">
+					<div class="article__content">
+						<div class="article__top">
+							<h2 class="article__title" data-animation="fade">УТРО НИЧЕМ НЕ ОТЛИЧАЛОСЬ</h2>
+							<h3 class="article__author">Лазарь Френкель</h3>
+							<a class="article__time" data-scroll-to="" href=#lazar-frenkel>
+
+
+								<picture>
+
+									<source srcset="images/time-2.webp 1x, images/time-2@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/time-2.png 1x, images/time-2@2x.png 1.3x" type="image/png">
+
+
+									<img src="images/time-2.png" width="300" height="62" loading="lazy" alt="image">
+
+								</picture>
+
+							</a>
+						</div>
+						<div class="block block--indent block--indent-bot-small">
+							<div class="block__inner" data-animation="right"></div>
+							<div class="block__text">
+
+								<div class="article__image article__image--top-small">
+									<div class="article__image-inner" data-animation="right-slow">
+
+
+										<picture>
+
+											<source srcset="images/author-2.webp 1x, images/author-2@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/author-2.png 1x, images/author-2@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/author-2.png" width="704" height="524" loading="lazy" alt="image">
+
+										</picture>
+
+										<div class="article__image-desc">
+											<span>Ленинград, Невский проспект, 22 июня 1941 года.</span>
+											<span>РИА Новости</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="article__text article__text--top-small article__text--2">
+									<p>«Утро ничем не отличалось от других дней, только небо заволокло тучами. Воскресенье, и обидно, что такая паршивая погода. Пришел в палатку Шумилин и сообщил, что на нас напала Германия. Бомбили несколько городов, имеются убитые. Молотов выступил по радио.</p>
+									<div class='article__mark-text'>
+										<p><strong>Не верилось в такое вероломство. Все потрясены. Начались оживленные разговоры среди бойцов.</strong></p>
+									</div>
+									<p>Все уверены, что Красная Армия даст фашистам сокрушительный отпор. Удивляет, на что надеется Гитлер. Ведь он уже воюет третий год. Правда, по Европе <br> он прошел победным маршем. Имеет большой опыт войны. Генералы его еще не устали от войны. Но ему приходится держать большую оккупационную армию в Европе».</p>
+								</div>
+
+								<div class="article__mask js-article-mask article__mask--2" data-animation="right-slow-more">
+									<div class="article__mask-inner">
+
+
+										<picture>
+
+											<source media="(min-width: 993px)" srcset="images/mask-2.webp 1x, images/mask-2@2x.webp 1.3x" type="image/webp">
+											<source media="(min-width: 993px)" srcset="images/mask-2.png 1x, images/mask-2@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/mask-2-mobile.png" width="1623" height="1164" loading="lazy" alt="image">
+
+										</picture>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="article__about desc " data-animation="fade">
+						<div class="desc__text">
+							<p><strong>Лазарь Френкель </strong>(1914–1986) родился в местечке Махновка Бердичевского уезда Киевской губернии. В 1921 году переехал в Москву. Окончил Вечерний машиностроительный институт, работал на ремонтной базе Северного флота в Мурманске. Призван на срочную военную службу осенью 1939 года. В июне 1941-го служил под Липецком. С 3 июля 1941-го — на фронте</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="article js-scroll-section" id=abram-khashevskiy>
+				<div class="wrapper">
+					<div class="article__content">
+						<div class="article__top">
+							<h2 class="article__title" data-animation="fade">БУДЕТ ОЧЕНЬ НЕЛЕГКО И НА ДОЛГОЕ ВРЕМЯ</h2>
+							<h3 class="article__author">Абрам Хашевский</h3>
+							<a class="article__time" data-scroll-to="" href=#abram-khashevskiy>
+
+
+								<picture>
+
+									<source srcset="images/time-3.webp 1x, images/time-3@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/time-3.png 1x, images/time-3@2x.png 1.3x" type="image/png">
+
+
+									<img src="images/time-3.png" width="300" height="62" loading="lazy" alt="image">
+
+								</picture>
+
+							</a>
+						</div>
+						<div class="block block--indent">
+							<div class="block__inner" data-animation="right"></div>
+							<div class="block__text">
+
+								<div class="article__image article__image--indent article__image--3">
+									<div class="article__image-inner" data-animation="right-slow">
+
+
+										<picture>
+
+											<source srcset="images/author-3.webp 1x, images/author-3@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/author-3.png 1x, images/author-3@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/author-3.png" width="401" height="502" loading="lazy" alt="image">
+
+										</picture>
+
+										<div class="article__image-desc">
+											<span>Абрам Хашевский</span>
+											<span>Научно-просветительный центр «Холокост»</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="article__text article__text--3">
+									<p>«...Известие о войне встретил совершенно спокойно. Сразу же сжег все скопившиеся письма и уложил все необходимые вещи в вещевой мешок. Второстепенное уложил в чемодан и пока вожу его с собой. Потеряется — его жалеть нечего, нет — хорошо. Опять получил наган и противогаз. Ехали мы воинским эшелоном. Я устроился очень удобно. Одни сутки почти целиком спал, вторые целиком ехал на паровозе дежурным и день третьих суток немного спал, а остальное время провел в разговорах. [...]</p>
+									<p>Скоро, очевидно, выедем на фронт. Иногда появляются самолеты противника, преследуемые нашими, но нас пока еще авиация немцев не тревожит. На предстоящую войну я, как и в прошлом году, смотрю совершенно <br>спокойно</p>
+									<p></p>
+									<div class='article__mark-text'>
+										<p><strong>Убьют — ничего не поделаешь, нет — посмотрю много интересного. Правда, будет очень нелегко и, наверно, на долгое время. [...]</strong></p>
+									</div>
+									<p>Напиши, каким образом отразилась война на всех вас. Не хочет ли, случайно, и Муличка на фронт? Как Мара, <br>не собирается ли в армию? Продолжает ли учиться Ната, или она идет работать в госпиталь? Вообще, как чувствуется война в Москве? За меня не беспокойся. Будь здоров. Привет всем. Абраша».</p>
+								</div>
+
+								<div class="article__mask js-article-mask article__mask--3" data-animation="right-slow-more">
+									<div class="article__mask-inner">
+
+
+										<picture>
+
+											<source media="(min-width: 993px)" srcset="images/mask-3.webp 1x, images/mask-3@2x.webp 1.3x" type="image/webp">
+											<source media="(min-width: 993px)" srcset="images/mask-3.png 1x, images/mask-3@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/mask-3-mobile.png" width="1537" height="1350" loading="lazy" alt="image">
+
+										</picture>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="article__about desc " data-animation="fade">
+						<div class="desc__text">
+							<p><strong>Абрам Хашевский</strong>(1921–1941) родился в Москве. В 1939 году окончил школу и без экзаменов был принят в Московский юридический институт. В ноябре 1939-го добровольцем ушел в армию. На фронте — с июля 1941 года</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="article js-scroll-section" id=alexander-karpov>
+				<div class="wrapper">
+					<div class="article__content">
+						<div class="article__top">
+							<h2 class="article__title" data-animation="fade">ВРЕМЯ СТОИТ И ХОРОШЕЕ И ПЛОХОЕ</h2>
+							<h3 class="article__author">Александр Карпов</h3>
+							<a class="article__time" data-scroll-to="" href=#alexander-karpov>
+
+
+								<picture>
+
+									<source srcset="images/time-4.webp 1x, images/time-4@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/time-4.png 1x, images/time-4@2x.png 1.3x" type="image/png">
+
+
+									<img src="images/time-4.png" width="300" height="62" loading="lazy" alt="image">
+
+								</picture>
+
+							</a>
+						</div>
+						<div class="block block--indent">
+							<div class="block__inner" data-animation="right"></div>
+							<div class="block__text">
+
+								<div class="article__image article__image--top-small">
+									<div class="article__image-inner" data-animation="right-slow">
+
+
+										<picture>
+
+											<source srcset="images/author-4.webp 1x, images/author-4@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/author-4.png 1x, images/author-4@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/author-4.png" width="704" height="524" loading="lazy" alt="image">
+
+										</picture>
+
+										<div class="article__image-desc">
+											<span>Москва, 23 июня 1941 года.</span>
+											<span>Анатолий Гаранин / РИА Новости</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="article__text article__text--top-small article__text--4">
+									<p>«...Милая Мурочка прошло много времени как я уже не писал тебе писем, но я прошу тебя сильно Бик <br>не беспокоиться, ведь сама знаешь какое сейчас время...</p>
+									<div class='article__mark-text'>
+										<p><strong>но ты, моя душечка, не беспокойся все будет в порядке, конечно увидеться придется возможно скоро, а возможно и не совсем скоро, но это ничего, волноваться и расстраиваться не надо. [...]</strong></p>
+									</div>
+									<p>...никуда не трогайся, а лучше живи в Адлере, деньги как только получу, так тут же вышлю почти все, сколько будет и ты будешь ими там распоряжаться. Но только прошу тебя, Мурочка, не обижай себя в питании и особенно береги Валичку, мою родную дочку, которую мне так хочется увидеть, что нет возможности. Барахло я послал тебе в 2-х посылках, оно мне здесь не нужно, мы все получили, шинели, сапоги...</p>
+									<p>Время стоит и хорошее и плохое, очень стало жарко, что нет никакой возможности, ездим везде, куда только потребуется. Адреса пока что нет, как будет, так сообщу открыткой. Милочка, прошу тебя сфотографироваться с Валичкой и прислать мне фотокарточку, как только получишь адрес. Весь наш коллектив ветчасти жив и здоров, все передают тебе привет, особенно дочке Валичке. Как только будет адрес то пиши мне все что есть нового в Адлере и вообще. Кто где живет в Адлере, как себя чувствует Валентина, ее здоровье. Ну, Душечка, особенного писать не приходится потому что нельзя, и особенно ничего нет.</p>
+									<p>Пока, до свидания, я жив и здоров того и Вам с Валичкой желаю. Крепко целую обеих и обнимаю».</p>
+								</div>
+
+								<div class="article__mask js-article-mask article__mask--4" data-animation="right-slow-more">
+									<div class="article__mask-inner">
+
+
+										<picture>
+
+											<source media="(min-width: 993px)" srcset="images/mask-4.webp 1x, images/mask-4@2x.webp 1.3x" type="image/webp">
+											<source media="(min-width: 993px)" srcset="images/mask-4.png 1x, images/mask-4@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/mask-4-mobile.png" width="1589" height="1395" loading="lazy" alt="image">
+
+										</picture>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="article__about desc article__about--small" data-animation="fade">
+						<div class="desc__text">
+							<p><strong>Александр Карпов</strong>(1914 – ?) служил фельдшером 88-го стрелкового полка. Пропал без вести в 1941 году, предположительно, в «Киевском котле»</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="article js-scroll-section" id=anna-zlatopolskaya>
+				<div class="wrapper">
+					<div class="article__content">
+						<div class="article__top">
+							<h2 class="article__title" data-animation="fade">ВОТ И ВСЕ, ЧТО МОЖНО НАПИСАТЬ</h2>
+							<h3 class="article__author">Анна Златопольская</h3>
+							<a class="article__time" data-scroll-to="" href=#anna-zlatopolskaya>
+
+
+								<picture>
+
+									<source srcset="images/time-5.webp 1x, images/time-5@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/time-5.png 1x, images/time-5@2x.png 1.3x" type="image/png">
+
+
+									<img src="images/time-5.png" width="300" height="62" loading="lazy" alt="image">
+
+								</picture>
+
+							</a>
+						</div>
+						<div class="block block--indent">
+							<div class="block__inner" data-animation="right"></div>
+							<div class="block__text">
+
+								<div class="article__image article__image--top-small">
+									<div class="article__image-inner" data-animation="right-slow">
+
+
+										<picture>
+
+											<source srcset="images/author-5.webp 1x, images/author-5@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/author-5.png 1x, images/author-5@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/author-5.png" width="704" height="582" loading="lazy" alt="image">
+
+										</picture>
+
+										<div class="article__image-desc">
+											<span>Ленинград, 22 июня 1941 года.</span>
+											<span>Борис Лосин / РИА Новости</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="article__text article__text--top-small article__text--5">
+									<p>«...Живем мы в 30 км от Загорска в совхозе при Центральном Военном госпитале. Устроились <br>в небольшой деревушке; у самого дома течет река; очень красивая природа. Теперь о нашей работе. Мы с Манечкой работаем на огороде и на сене. Анечка и Рита — учетчики; Анечка отмечает наши успехи. Мы с Маней на сене вырабатываем по гектару, поэтому считаем вправе навестить местный трактир, конечно, в компании с учетчиками. Работаем с 7 ч. утра до 8 ч. вечера с перерывом на 3 часа. Вечером остается достаточно свободного времени. Устраиваем прогулки, читаем книжонки из местной библиотеки. Вот и сейчас, в обеденный перерыв, Маня с Ритой режутся в дураки.</p>
+									<div class='article__mark-text'>
+										<p><strong>Как видишь, «весело», так сказать. Но хочется в Москву. Не знаем точно, будем ли мы заниматься с 1 августа. Ирочка, если можешь, то пиши. Пиши и про всех наших, где они, где работают?</strong></p>
+									</div>
+									<p>Ну, вот и все, что можно написать. Передавай от всех нас большой привет!»</p>
+								</div>
+
+								<div class="article__mask js-article-mask article__mask--5" data-animation="right-slow-more">
+									<div class="article__mask-inner">
+
+
+										<picture>
+
+											<source media="(min-width: 993px)" srcset="images/mask-5.webp 1x, images/mask-5@2x.webp 1.3x" type="image/webp">
+											<source media="(min-width: 993px)" srcset="images/mask-5.png 1x, images/mask-5@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/mask-5-mobile.png" width="1491" height="1132" loading="lazy" alt="image">
+
+										</picture>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="article__about desc " data-animation="fade">
+						<div class="desc__text">
+							<p><strong>Анна Златопольская</strong>во время войны была студенткой исторического факультета</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="article js-scroll-section" id=elizaveta-blumkina>
+				<div class="wrapper">
+					<div class="article__content">
+						<div class="article__top">
+							<h2 class="article__title" data-animation="fade">НО ОН УЖЕ УЕХАЛ</h2>
+							<h3 class="article__author">Елизавета (Лея)<br> Блюмкина</h3>
+							<a class="article__time" data-scroll-to="" href=#elizaveta-blumkina>
+
+
+								<picture>
+
+									<source srcset="images/time-6.webp 1x, images/time-6@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/time-6.png 1x, images/time-6@2x.png 1.3x" type="image/png">
+
+
+									<img src="images/time-6.png" width="300" height="62" loading="lazy" alt="image">
+
+								</picture>
+
+							</a>
+						</div>
+						<div class="block block--indent">
+							<div class="block__inner" data-animation="right"></div>
+							<div class="block__text">
+
+								<div class="article__image article__image--indent-small">
+									<div class="article__image-inner" data-animation="right-slow">
+
+
+										<picture>
+
+											<source srcset="images/author-6.webp 1x, images/author-6@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/author-6.png 1x, images/author-6@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/author-6.png" width="401" height="558" loading="lazy" alt="image">
+
+										</picture>
+
+										<div class="article__image-desc">
+											<span>Лето 1941 года, новобранцыполучают обмундирование.</span>
+											<span>Анатолий Гаранин / РИА Новости</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="article__text article__text--6">
+									<p>«Здравствуйте, дорогие папочка и мамуся! Ваши письма получила по выходе из больницы. Не знаю, о чем раньше начать вам писать. Только вчера я вышла из больницы, болела очень тяжело дизентерией. Сейчас думаю, что как-нибудь выкарабкалась и хочу быть здоровой, но сие от меня не зависит. 30-го июня призвали Евсея в действующую Красную Армию, а 18 июля был отправлен на фронт защищать нашу родину, я даже не попрощалась с ним, ибо его в больницу не пропускали и мы только обменялись письмами, что оставило осадок. Мы ведь так друг друга любим! Я, рискуя, выписалась из больницы со скандалом раньше, чтобы с ним попрощаться и проводить его, но он уже уехал.</p>
+									<p>Наша доблестная Красная Армия, в том числе и Евсей, отомстят и навсегда уничтожат гадину Гитлера и его прихлебателей, которые, навязав нам войну, хотели уничтожить нашу счастливую родину.</p>
+									<div class='article__mark-text'>
+										<p><strong>Будем надеяться, что Евсей вернется героем и с победой! Известие от него я уже имела, а письма, посланные им, я еще не получала, думаю, что на днях получу.</strong></p>
+									</div>
+									<p>Я ваше письмо читаю и так хочется вас повидать и расцеловать ваши милые мне лица, это облегчило б мою боль и облегчило — вылечило — бы меня. Милые вы мои, дорогие папочка и мамуся, напишите, что у вас там слышно и как вы там живете. Как здоровье папочки и мамино. Что слышно у Давида и где его семья. Обо всем напишите...»</p>
+								</div>
+
+								<div class="article__mask js-article-mask article__mask--6" data-animation="right-slow-more">
+									<div class="article__mask-inner">
+
+
+										<picture>
+
+											<source media="(min-width: 993px)" srcset="images/mask-6.webp 1x, images/mask-6@2x.webp 1.3x" type="image/webp">
+											<source media="(min-width: 993px)" srcset="images/mask-6.png 1x, images/mask-6@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/mask-6-mobile.png" width="1538" height="1359" loading="lazy" alt="image">
+
+										</picture>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="article__about desc article__about--small" data-animation="fade">
+						<div class="desc__text">
+							<p><strong>Елизавета (Лея) Блюмкина</strong>(1914 — ?) родилась в городе Климовичи Могилевской области. В 1928 году поступила в вечернюю школу, где и познакомилась с будущим мужем. Работала в клубе ЦИК, позже возглавляла комиссию по борьбе с беспризорностью</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="article js-scroll-section" id=ivan-prokhorov>
+				<div class="wrapper">
+					<div class="article__content">
+						<div class="article__top">
+							<h2 class="article__title" data-animation="fade">НА МЕНЯ НЕ ОБИЖАЙТЕСЬ, ВОЙНА ВСЕ НАРУШИЛА</h2>
+							<h3 class="article__author">Иван Прохоров</h3>
+							<a class="article__time" data-scroll-to="" href=#ivan-prokhorov>
+
+
+								<picture>
+
+									<source srcset="images/time-7.webp 1x, images/time-7@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/time-7.png 1x, images/time-7@2x.png 1.3x" type="image/png">
+
+
+									<img src="images/time-7.png" width="300" height="62" loading="lazy" alt="image">
+
+								</picture>
+
+							</a>
+						</div>
+						<div class="block block--indent">
+							<div class="block__inner" data-animation="right"></div>
+							<div class="block__text">
+
+								<div class="article__image article__image--top-small">
+									<div class="article__image-inner" data-animation="right-slow">
+
+
+										<picture>
+
+											<source srcset="images/author-7.webp 1x, images/author-7@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/author-7.png 1x, images/author-7@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/author-7.png" width="704" height="482" loading="lazy" alt="image">
+
+										</picture>
+
+										<div class="article__image-desc">
+											<span>Новобранцы на улицах Москвы, 23 июня 1941 года.</span>
+											<span>Анатолий Гаранин / РИА Новости</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="article__text article__text--top-small article__text--7">
+									<p>«Здравствуйте, папа, мама, Нина, Вера, Тося и Алечка. Шлю я вам свой пламенный привет и желаю всего хорошего в вашей жизни. Хорошего здоровья и спокойной жизни. Мама и папа, я послал вам письмо уже давно, прошло более 10 дней, а ответ еще не получал. Я не знаю, какая участь вас постигла. Пишу немного о себе. Живу <br>я в г. Казани уже с 19/07-41 года, всем обеспечен. За исключением, не пускают в город. Жив я и здоров. <br>Сильно соскучился по вам.</p>
+									<div class='article__mark-text'>
+										<p><strong>В июле собирался ехать в отпуск, было уже все готово, но эта проклятая война, навязанная фашистами, не дала мне возможности увидеть вас. Не знаю, но я уверен все-таки, хотя немного, что вас увижу живыми, так же как и вы увидите меня живым и невредимым.</strong></p>
+									</div>
+									<p>И если в случае, вы меня не увидите живым, то кто будет смотреть на мое фото, которое я вам посылаю. На этой фотографии я в точности как на самом деле, живой. [...]</p>
+									<p>К отпуску я скопил деньжонок подходяще 1800 рублей, надеясь в Москве купить что-либо для вас,<br>но не пришлось. Хотел вас порадовать многим, но пока радуюсь своей мертвой личностью на бумаге. Прошу, <br>на меня не обижайтесь, война все нарушила.<br> До свидания. Крепко целую, ваш сын и брат, Прохоров».</p>
+								</div>
+
+								<div class="article__mask js-article-mask article__mask--7" data-animation="right-slow-more">
+									<div class="article__mask-inner">
+
+
+										<picture>
+
+											<source media="(min-width: 993px)" srcset="images/mask-7.webp 1x, images/mask-7@2x.webp 1.3x" type="image/webp">
+											<source media="(min-width: 993px)" srcset="images/mask-7.png 1x, images/mask-7@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/mask-7-mobile.png" width="1506" height="1332" loading="lazy" alt="image">
+
+										</picture>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="article__about desc " data-animation="fade">
+						<div class="desc__text">
+							<p><strong>Иван Прохоров</strong>(1919–1941) родился в деревне Нижнее Аблязово Кузнецкого района Пензенской области в семье сапожника. После окончания семилетки продолжил учебу в Хвалынском педагогическом училище. Позже поступил в Челябинскую летную школу. В 1941-м Ивану присвоили звание старшего сержанта и направили на службу на Буковину, где размещался один из крупнейших авиаотрядов Красной Армии</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="article js-scroll-section" id=nikolay-frolov>
+				<div class="wrapper">
+					<div class="article__content">
+						<div class="article__top">
+							<h2 class="article__title" data-animation="fade">БУДЕМ ЖИВЫ — И ЖИЗНЬ НАЛАДИТСЯ</h2>
+							<h3 class="article__author">Николай Фролов</h3>
+							<a class="article__time" data-scroll-to="" href=#nikolay-frolov>
+
+
+								<picture>
+
+									<source srcset="images/time-8.webp 1x, images/time-8@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/time-8.png 1x, images/time-8@2x.png 1.3x" type="image/png">
+
+
+									<img src="images/time-8.png" width="300" height="62" loading="lazy" alt="image">
+
+								</picture>
+
+							</a>
+						</div>
+						<div class="block block--indent">
+							<div class="block__inner" data-animation="right"></div>
+							<div class="block__text">
+
+								<div class="article__image article__image--indent-small article__image--top-small">
+									<div class="article__image-inner" data-animation="right-slow">
+
+
+										<picture>
+
+											<source srcset="images/author-8.webp 1x, images/author-8@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/author-8.png 1x, images/author-8@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/author-8.png" width="540" height="461" loading="lazy" alt="image">
+
+										</picture>
+
+										<div class="article__image-desc">
+											<span>Советское информационное бюро — главный источник новостей о ситуации </span>
+											<span>на фронте — было создано 24 июня 1941 года. РИА Новости</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="article__text article__text--top-small article__text--8">
+									<p>«Здравствуйте, многоуважаемые жена Толя, сынка Львуша, а также и вся семья Лабутиных. Шлю привет и желаю всего хорошего в вашей жизни. Сообщаю о том, что я жив и здоров, что и вам от души желаю. Надо признаться в том, что уже становится скучновато, не получая длительный промежуток от вас писем и не зная, как вы там живете.</p>
+									<div class='article__mark-text'>
+										<p><strong>Я предполагаю, что увеселительного у вас ничего нет, потому что война все же действует на всех в отрицательную сторону. Это все ничего; придет конец фашистам, будем живы и жизнь наладится.</strong></p>
+									</div>
+									<p>Да, мне разами в голову заходит мысль такая, что дома думают что меня нет уже в живых, потому что письма приходится писать очень редко. Теперь неплохо обратно восстановить связь, адрес мой теперь известный. Пишите, как вы живете, что у вас нового. Как там чувствует себя сынка. Как бы посмотрел на него, хотя бы издали. Интересно, как у вас обстоят дела с кадрами учителей, мужчины, вероятно, взяты на фронт. Ну, как будто бы все. Настроение хорошее, даже лучше, чем было в мирное время. Враг с каждым днем делается пассивнее, а наши силы крепнут с каждым днем и слова Сталина будут оправданы на деле, что враг будет разбит, победа будет за нами. До свиданья. Крепко целую вас».</p>
+								</div>
+
+								<div class="article__mask js-article-mask article__mask--8" data-animation="right-slow-more">
+									<div class="article__mask-inner">
+
+
+										<picture>
+
+											<source media="(min-width: 993px)" srcset="images/mask-8.webp 1x, images/mask-8@2x.webp 1.3x" type="image/webp">
+											<source media="(min-width: 993px)" srcset="images/mask-8.png 1x, images/mask-8@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/mask-8-mobile.png" width="1537" height="1350" loading="lazy" alt="image">
+
+										</picture>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="article__about desc " data-animation="fade">
+						<div class="desc__text">
+							<p><strong>Николай Фролов</strong>(1918–1941) родился в селе Спешнево (ныне — Княгининского района Нижегородской области). Воевал на Юго-Западном фронте. Служил в 1-й пулеметной роте 409-го стрелкового полка 137-й стрелковой дивизии</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="article js-scroll-section" id=saidali-akbarov>
+				<div class="wrapper">
+					<div class="article__content">
+						<div class="article__top">
+							<h2 class="article__title" data-animation="fade">ЗА МЕНЯ НЕ ПЕРЕЖИВАЙТЕ</h2>
+							<h3 class="article__author">Сайдали Акбаров</h3>
+							<a class="article__time" data-scroll-to="" href=#saidali-akbarov>
+
+
+								<picture>
+
+									<source srcset="images/time-9.webp 1x, images/time-9@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/time-9.png 1x, images/time-9@2x.png 1.3x" type="image/png">
+
+
+									<img src="images/time-9.png" width="300" height="62" loading="lazy" alt="image">
+
+								</picture>
+
+							</a>
+						</div>
+						<div class="block block--indent">
+							<div class="block__inner" data-animation="right"></div>
+							<div class="block__text">
+
+								<div class="article__image article__image--indent-small">
+									<div class="article__image-inner" data-animation="right-slow">
+
+
+										<picture>
+
+											<source srcset="images/author-9.webp 1x, images/author-9@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/author-9.png 1x, images/author-9@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/author-9.png" width="453" height="630" loading="lazy" alt="image">
+
+										</picture>
+
+										<div class="article__image-desc">
+											<span>Сайдали Акбаров.</span>
+											<span>Новое литературное обозрение</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="article__text article__text--9">
+									<p>«Пламенный привет всем моим родным. Спасибо Господу Богу, у меня все хорошо. Защищаю свою Родину. Мой друг, Абдуллаев Лутфулла, я не помню точно, примерно 2 августа, получил пулю в плечо и попал в больницу. Не знаю, где он сейчас. Если вдруг его отпустят, он может прийти к нам домой, он точно знает наш адрес. Мы даже не смогли попрощаться. Но если он сообразит, то из больницы он будет писать вам. [...]</p>
+									<div class='article__mark-text'>
+										<p><strong>Мама, за меня не переживайте и не печальтесь обо мне. Все в Божьих руках, что предначертано, того не минуешь.</strong></p>
+									</div>
+									<p>Мама, как дела в Коканде? Не тяжело ли Вам? У Вас, наверное, проблемы с продуктами? Здесь пшеница и другие посевы очень хороши, они пропадают зря. Но, к сожалению, забирать с собой нельзя, Вы же сами понимаете. Во многих деревнях даже хозяйства все оставлены. У коров, телят, свиней нет хозяев. Они постоянно, собираясь в стадо, встречаются на нашем пути. Нам готовят из них еду. Где Ахмаджон? Толохон в Коканде или уехал? Сохибажон в порядке? От Вас нет никаких писем. Если даже Вы писали, похоже, до нас письма не доходят. Никому из нас письма не приходят. Ну ладно,<br> это все, вкратце. Дай Бог, чтобы в скором времени мы смогли увидеться».</p>
+								</div>
+
+								<div class="article__mask js-article-mask article__mask--9" data-animation="right-slow-more">
+									<div class="article__mask-inner">
+
+
+										<picture>
+
+											<source media="(min-width: 993px)" srcset="images/mask-9.webp 1x, images/mask-9@2x.webp 1.3x" type="image/webp">
+											<source media="(min-width: 993px)" srcset="images/mask-9.png 1x, images/mask-9@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/mask-9-mobile.png" width="1537" height="1350" loading="lazy" alt="image">
+
+										</picture>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="article__about desc " data-animation="fade">
+						<div class="desc__text">
+							<p><strong>Сайдали Акбаров</strong>(? — 1941) родился в узбекском городе Коканде. В 1939 году служил в армии. В сентябре 1941-го погиб в бою</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="article js-scroll-section" id=ekaterina-zelenko>
+				<div class="wrapper">
+					<div class="article__content">
+						<div class="article__top">
+							<h2 class="article__title" data-animation="fade">КАКИЕ ПЛАНЫ БЫЛИ!..</h2>
+							<h3 class="article__author">Екатерина Зеленко</h3>
+							<a class="article__time" data-scroll-to="" href=#ekaterina-zelenko>
+
+
+								<picture>
+
+									<source srcset="images/time-10.webp 1x, images/time-10@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/time-10.png 1x, images/time-10@2x.png 1.3x" type="image/png">
+
+
+									<img src="images/time-10.png" width="300" height="62" loading="lazy" alt="image">
+
+								</picture>
+
+							</a>
+						</div>
+						<div class="block block--indent">
+							<div class="block__inner" data-animation="right"></div>
+							<div class="block__text">
+
+								<div class="article__image article__image--top-small">
+									<div class="article__image-inner" data-animation="right-slow">
+
+
+										<picture>
+
+											<source srcset="images/author-10.webp 1x, images/author-10@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/author-10.png 1x, images/author-10@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/author-10.png" width="591" height="498" loading="lazy" alt="image">
+
+										</picture>
+
+										<div class="article__image-desc">
+											<span>Екатерина Зеленко.</span>
+											<span>История.рф</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="article__text article__text--top-small article__text--10">
+									<p>«Эх, Соня, как все изменилось! Какие планы были! Как хорошо было жить! А теперь война...</p>
+									<div class='article__mark-text'>
+										<p><strong>А я собиралась в летних лагерях варить варенье, там ягоды очень много, особенно земляники...</strong></p>
+									</div>
+									<p>Пишу письмо под крылом самолета. Вот-вот полечу на задание. Не беспокойся за меня. Кто из наших идет на фронт? Привет от Павлика. Ваша Катя».</p>
+								</div>
+
+								<div class="article__image article__image--default">
+									<div class="article__image-inner">
+
+
+										<picture>
+
+											<source srcset="images/author-10-2.webp 1x, images/author-10-2@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/author-10-2.png 1x, images/author-10-2@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/author-10-2.png" width="681" height="356" loading="lazy" alt="image">
+
+										</picture>
+
+										<div class="article__image-desc">
+											<span>Екатерина Зеленко.</span>
+											<span>История.рф</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="article__mask js-article-mask article__mask--10" data-animation="right-slow-more">
+									<div class="article__mask-inner">
+
+
+										<picture>
+
+											<source media="(min-width: 993px)" srcset="images/mask-10.webp 1x, images/mask-10@2x.webp 1.3x" type="image/webp">
+											<source media="(min-width: 993px)" srcset="images/mask-10.png 1x, images/mask-10@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/mask-10-mobile.png" width="1590" height="1397" loading="lazy" alt="image">
+
+										</picture>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="article__about desc " data-animation="fade">
+						<div class="desc__text">
+							<p><strong>Екатерина Зеленко</strong>(1916–1941) родилась в селе Корощино Волынской губернии. Окончила семь классов неполной средней школы, прошла курс обучения в Воронежском аэроклубе. Окончила 3-ю Оренбургскую военную авиационную школу летчиков и летчиков-наблюдателей. Служила в 19-й легкой бомбардировочной авиационной бригаде, расквартированной в Харькове. Погибла в бою 12 сентября 1941 года</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="article js-scroll-section" id=yakov-berman>
+				<div class="wrapper">
+					<div class="article__content">
+						<div class="article__top">
+							<h2 class="article__title" data-animation="fade">СКОРО СНОВА ЗАЖИВЕМ ТАК, КАК ПОЛАГАЕТСЯ</h2>
+							<h3 class="article__author">Яков Берман</h3>
+							<a class="article__time" data-scroll-to="" href=#yakov-berman>
+
+
+								<picture>
+
+									<source srcset="images/time-11.webp 1x, images/time-11@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/time-11.png 1x, images/time-11@2x.png 1.3x" type="image/png">
+
+
+									<img src="images/time-11.png" width="300" height="62" loading="lazy" alt="image">
+
+								</picture>
+
+							</a>
+						</div>
+						<div class="block block--indent">
+							<div class="block__inner" data-animation="right"></div>
+							<div class="block__text">
+
+								<div class="article__text article__text--top article__text--11">
+									<p>«Дорогие Динуська и Ремик! Уже 2 недели, как мы с вами не видались. Много воды утекло с тех пор. Много я передумал о вас за это время. Где вы? Что с вами? Как живете? Как тяжело быть в неведении. Тяжело не как эгоисту, который хочет успокоить себя, а хочется знать о вас, посоветоваться и хоть кой-чем помочь в вашей тяжелой участи быть без дома и крова. [...]</p>
+									<p>Какова прекрасна была жизнь до войны!</p>
+									<div class='article__mark-text'>
+										<p><strong>Верю и хочу, чтобы вы всем своим существом верили и предвкушали прелести будущей жизни после нашей победы.</strong></p>
+									</div>
+									<p>Динуська родная! Прошу тебя, поставь сейчас перед собой одну задачу — беречь себя и ребенка<br> и не растеряться со своими. Держись вместе с папой, мамой и т.д. [...] Обо мне не беспокойся, у меня все <br>в полном порядке. Работаю. Кроме работы ни о чем <br>не знаю, да и не хочу знать. Хочется еще больше работать, чтобы сделать все, что от меня зависит для нашей победы. Прошу, успокаивай маму и папу, чтобы они <br> не беспокоились обо мне. Не теряй бодрости и других бодри. Важно то, что вашим испытаниям скоро будет конец, что скоро снова заживем так, как полагается свободным гражданам, а то, что один промежуток времени попался тяжелым, это ерунда, и ничто не сравнится с вечностью и с тем, что испытывали наши предки и родители.</p>
+									<p>Динуська, прошу тебя, продай отрез на пальто, который у тебя имеется, и воротник. Послушай меня и продай сейчас, и подготовь себе и Ремочке то, что необходимо на зиму. Пиши мне, где Маша, Соня, Ида, Шива. Где Миша, Изя,Ляля. Как папа, мама, Зяма и Роза. Где Таня и Буся. Каждое слово, которое я узнаю о них, будет вселять в меня бодрость и хоть немного окрасит будни. Целую вас крепко-крепко. Держитесь все вместе. <br>До скорого свидания!»</p>
+								</div>
+
+								<div class="article__mask js-article-mask article__mask--11" data-animation="right-slow-more">
+									<div class="article__mask-inner">
+
+
+										<picture>
+
+											<source media="(min-width: 993px)" srcset="images/mask-11.webp 1x, images/mask-11@2x.webp 1.3x" type="image/webp">
+											<source media="(min-width: 993px)" srcset="images/mask-11.png 1x, images/mask-11@2x.png 1.3x" type="image/png">
+
+
+											<img src="images/mask-11-mobile.png" width="1551" height="1373" loading="lazy" alt="image">
+
+										</picture>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="article__about desc " data-animation="fade">
+						<div class="desc__text">
+							<p><strong>Яков Берман</strong>(1909–1941) родился в городе Пирятине, жил в Киеве, работал начальником отдела капитального строительства Петровских кирпичных заводов. Служил в военно-строительной части. Вероятно, пропал без вести в сентябре 1941 года в Киевском окружении</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<section class="source js-bottom-nav">
+			<div class="wrapper">
+				<div class="block source__block">
+					<div class="block__inner source__inner" data-animation="right-slow"></div>
+					<div class="block__text">
+						<div class="desc">
+							<div class="source__desc">
+								<h6 class="source__title">Источники:</h6>
+								<p>XX век: письма войны. Антология военной корреспонденции. — М.: НЛО, 2016</p>
+								<p>«Здравствуйте, дорогие мои...» (фронтовые письма 1941–1945 гг.): Сборник документов. — Нижн. Новгород: Центр. архив Нижегор. обл., 2015</p>
+								<p>Летописи войны: Воспоминания, дневники, письма историков МГУ — участников Великой Отечественной войны. — Изд-во Моск. ун-та, 2012</p>
+								<p>Последние письма с фронта: в 5 тт. — М.: Воениздат, 1991–1995</p>
+								<p>Проект <span>«</span><a class="link" href="https://prozhito.org/" target="_blank">Прожито</a><span>»</span> Европейского университета в Санкт-Петербурге</p>
+								<p>«Сохрани мои письма...»: Сборник писем евреев периода Великой Отечественной войны. — М.: Центр и Фонд «Холокост», 2007–2021</p>
+								<p></p>
+								<p>За поддержку в работе над проектом благодарим Научно-просветительный центр <span>«</span><a class="link" href="https://holocf.ru/" target="_blank">Холокост<span>»</span></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
