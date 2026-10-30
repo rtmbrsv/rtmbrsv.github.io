@@ -262,7 +262,7 @@ a:visited { color: #551a8b; }
     <li><button class="icon" data-open="archive" role="option"><svg><use href="#i-folder"/></svg><span><span lang="ru">Архив</span><span lang="en">Archive</span></span></button></li>
     <li><button class="icon" data-open="programs" role="option"><svg><use href="#i-progs"/></svg><span>Program Files</span></button></li>
     <li><button class="icon" data-open="contacts" role="option"><svg><use href="#i-book"/></svg><span><span lang="ru">Контакты</span><span lang="en">Contacts</span></span></button></li>
-    <li><a class="icon" href="cv/artem-borisov-cv.pdf" target="_blank" rel="noopener" role="option"><svg><use href="#i-pdf"/></svg><span><span lang="ru">Резюме.pdf</span><span lang="en">CV (RU).pdf</span></span></a></li>
+    <li><a class="icon" href="cv/artem-borisov-cv.pdf" data-cv target="_blank" rel="noopener" role="option"><svg><use href="#i-pdf"/></svg><span><span lang="ru">Резюме.pdf</span><span lang="en">CV.pdf</span></span></a></li>
   </ul>
 
   <!-- About -->
@@ -301,7 +301,7 @@ Also on the desktop:
   Career ........ timeline by year
   Archive ....... finished projects
   Contacts ...... how to reach me
-  CV (RU).pdf ... the same, for HR</p>
+  CV.pdf ........ the same, for HR</p>
     </div>
     <div class="statusbar"><div><span lang="ru">Стр 1, стлб 1</span><span lang="en">Ln 1, Col 1</span></div><div>UTF-8</div></div>
   </section>
@@ -461,7 +461,7 @@ Also on the desktop:
         <div class="row"><svg><use href="#i-tg"/></svg><span>Telegram</span><a class="val" href="https://t.me/artemborisow" target="_blank" rel="noopener">@artemborisow</a></div>
         <div class="row"><svg><use href="#i-mail"/></svg><span>E-mail</span><a class="val" href="mailto:mail@artemborisov.com" id="mail">mail@artemborisov.com</a></div>
         <div class="row"><svg><use href="#i-git"/></svg><span>GitHub</span><a class="val" href="https://github.com/rtmbrsv" target="_blank" rel="noopener">github.com/rtmbrsv</a></div>
-        <div class="row"><svg><use href="#i-pdf"/></svg><span><span lang="ru">Резюме</span><span lang="en">CV</span></span><a class="val" href="cv/artem-borisov-cv.pdf" target="_blank" rel="noopener">artem-borisov-cv.pdf</a></div>
+        <div class="row"><svg><use href="#i-pdf"/></svg><span><span lang="ru">Резюме</span><span lang="en">CV</span></span><a class="val" href="cv/artem-borisov-cv.pdf" data-cv target="_blank" rel="noopener">artem-borisov-cv.pdf</a></div>
       </div>
     </div>
     <div class="dialog-actions">
@@ -478,7 +478,7 @@ Also on the desktop:
     <li><button class="mi" data-open="career"><svg><use href="#i-gantt"/></svg><span><span lang="ru">Карьера</span><span lang="en">Career</span></span></button></li>
     <li><button class="mi" data-open="archive"><svg><use href="#i-folder"/></svg><span><span lang="ru">Архив</span><span lang="en">Archive</span></span></button></li>
     <li><button class="mi" data-open="programs"><svg><use href="#i-progs"/></svg><span>Program Files</span></button></li>
-    <li><a class="mi" href="cv/artem-borisov-cv.pdf" target="_blank" rel="noopener"><svg><use href="#i-pdf"/></svg><span><span lang="ru">Резюме.pdf</span><span lang="en">CV (RU).pdf</span></span></a></li>
+    <li><a class="mi" href="cv/artem-borisov-cv.pdf" data-cv target="_blank" rel="noopener"><svg><use href="#i-pdf"/></svg><span><span lang="ru">Резюме.pdf</span><span lang="en">CV.pdf</span></span></a></li>
     <li class="sep"></li>
     <li><a class="mi" href="https://t.me/artemborisow" target="_blank" rel="noopener"><svg><use href="#i-tg"/></svg><span>Telegram</span></a></li>
     <li><a class="mi" href="https://github.com/rtmbrsv" target="_blank" rel="noopener"><svg><use href="#i-git"/></svg><span>GitHub</span></a></li>
@@ -510,6 +510,7 @@ Also on the desktop:
   const setLang = (l) => {
     document.documentElement.lang = l;
     document.title = titles[l];
+    $$('[data-cv]').forEach((a) => { a.href = l === 'en' ? 'cv/artem-borisov-cv-en.pdf' : 'cv/artem-borisov-cv.pdf'; if (a.classList.contains('val')) a.textContent = a.href.split('/').pop(); });
     store.set('lang', l);
   };
   setLang(store.get('lang') || (/^ru|^uk|^be|^kk/i.test(navigator.language || '') ? 'ru' : 'en'));
