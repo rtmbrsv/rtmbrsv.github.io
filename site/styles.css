@@ -46,6 +46,8 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
 .top { padding: 25px 0 22px; border-bottom: 1px solid var(--rule); }
 .bottom { padding: 21px 0 28px; border-top: 1px solid var(--rule); }
 .modes, .links { display: flex; flex-wrap: wrap; gap: 24px; }
+.bottom .links { align-items: baseline; line-height: 1.25; }
+.bottom .links a { display: inline-block; white-space: nowrap; }
 .modes a[aria-current="page"] { text-decoration: underline; text-underline-offset: .2em; }
 
 main {
@@ -87,7 +89,7 @@ h1 span { display: block; }
   .intro { grid-template-columns: 1fr; gap: 35px; }
   .intro p { font-size: clamp(32px, 7vw, 48px); }
   .bottom { align-items: flex-start; flex-direction: column; gap: 20px; }
-  .links { gap: 15px 24px; }
+  .links { gap: 15px clamp(12px, 2vw, 24px); }
 }
 @media (max-width: 390px) {
   h1 { font-size: 15.4vw; }
