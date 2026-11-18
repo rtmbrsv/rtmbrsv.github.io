@@ -1,0 +1,32 @@
+/* The same type-led first screen, with a few quiet rows below it. */
+main { display: block; padding-top: clamp(95px, 13vh, 170px); padding-bottom: 130px; }
+h1 { margin-bottom: clamp(85px, 13vh, 150px); }
+.details { margin-top: clamp(115px, 19vh, 240px); }
+.detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+  border-top: 1px solid var(--rule);
+  padding: 20px 0 clamp(58px, 9vh, 115px);
+}
+.detail:last-child { padding-bottom: 0; }
+.detail h2 {
+  margin: 0;
+  font-size: clamp(12px, 1vw, 15px);
+  line-height: 1.4;
+  font-weight: 600;
+}
+.detail p {
+  margin: 0;
+  max-width: 720px;
+  font-size: clamp(25px, 2.6vw, 39px);
+  line-height: 1.18;
+  letter-spacing: -.04em;
+  font-weight: 500;
+}
+@media (max-width: 680px) {
+  main { padding-top: clamp(105px, 20vh, 190px); padding-bottom: 95px; }
+  .details { margin-top: 130px; }
+  .detail { grid-template-columns: 1fr; gap: 31px; padding-bottom: 75px; }
+  .detail p { font-size: clamp(27px, 6vw, 36px); }
+}
