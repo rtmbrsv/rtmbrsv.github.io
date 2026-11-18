@@ -19,6 +19,21 @@ h1 { margin-bottom: clamp(85px, 13vh, 150px); }
   line-height: 1.4;
   font-weight: 600;
 }
+.detail h2::before {
+  content: "";
+  display: inline-block;
+  width: .82em;
+  height: .82em;
+  margin-right: .6em;
+  background: var(--accent);
+}
+.detail mark {
+  background: var(--accent);
+  color: var(--accent-ink);
+  padding: 0 .09em .025em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
 .detail p {
   margin: 0;
   max-width: 720px;
