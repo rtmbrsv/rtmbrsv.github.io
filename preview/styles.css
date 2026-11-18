@@ -1,0 +1,94 @@
+* { box-sizing: border-box; }
+
+:root {
+  color-scheme: light;
+  --paper: #f6f6f2;
+  --ink: #161616;
+  --rule: #161616;
+}
+
+.theme-dark {
+  color-scheme: dark;
+  --paper: #171717;
+  --ink: #f4f4ef;
+  --rule: #f4f4ef;
+}
+
+html { min-height: 100%; }
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: .16em; }
+a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 clamp(20px, 3.4vw, 64px);
+  display: flex;
+  flex-direction: column;
+}
+.top, .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+  font-size: clamp(12px, 1vw, 15px);
+  font-weight: 600;
+  letter-spacing: -.015em;
+}
+.top { padding: 25px 0 22px; border-bottom: 1px solid var(--rule); }
+.bottom { padding: 21px 0 28px; border-top: 1px solid var(--rule); }
+.modes, .links { display: flex; flex-wrap: wrap; gap: 24px; }
+.modes a[aria-current="page"] { text-decoration: underline; text-underline-offset: .2em; }
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(70px, 10vh, 150px) 0 clamp(85px, 12vh, 165px);
+}
+h1 {
+  margin: 0 0 clamp(65px, 11vh, 140px);
+  font-size: clamp(82px, 13.5vw, 225px);
+  line-height: .84;
+  font-weight: 700;
+  letter-spacing: -.075em;
+}
+h1 span { display: block; }
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+  border-top: 1px solid var(--rule);
+  padding-top: 17px;
+}
+.label { font-size: clamp(12px, 1vw, 15px); font-weight: 600; }
+.intro p {
+  margin: 0;
+  max-width: 850px;
+  font-size: clamp(29px, 3.5vw, 58px);
+  line-height: 1.07;
+  letter-spacing: -.055em;
+  font-weight: 500;
+}
+
+@media (max-width: 680px) {
+  .top { padding: 19px 0; }
+  main { justify-content: flex-start; padding: clamp(105px, 20vh, 190px) 0 80px; }
+  h1 { font-size: clamp(70px, 16vw, 110px); margin-bottom: 90px; }
+  .intro { grid-template-columns: 1fr; gap: 35px; }
+  .intro p { font-size: clamp(32px, 7vw, 48px); }
+  .bottom { align-items: flex-start; flex-direction: column; gap: 20px; }
+  .links { gap: 15px 24px; }
+}
+@media (max-width: 390px) {
+  h1 { font-size: 15.4vw; }
+}
